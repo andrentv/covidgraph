@@ -99,14 +99,12 @@ display: flex;
 }
 
 @media only screen and (max-width: 800px) {
-
   .headersInfo {
     font-size: 10px;
     text-align: center;
   }
-
-
 }
+
 /* .container {
   min-height: 100vh;
   padding: 0 0.5rem;

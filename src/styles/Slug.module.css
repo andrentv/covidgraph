@@ -1,0 +1,108 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.banner {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+}
+
+.banner img {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contents {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.countryTitle {
+  text-align: center;
+  font-size: 28px;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+
+.backPage {
+  height: 40px;
+  font-size: 33px;
+  background-color: black;
+  /* border-radius: 10px; */
+  /* border: white 2px solid; */
+  /* color: white; */
+  /* font-weight: 700; */
+}
+
+.backButton {
+  background-color: black;
+  display: inline;  
+  margin-right: 10px;  
+  box-sizing: border-box;
+  /* margin-right: 10px; */
+}
+
+.backButton img {
+  float: right;
+  padding: 2px;
+  width: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.twoContainers {
+  display: flex;
+}
+
+.leftContainer {
+  flex-direction: column;
+}
+
+.rightContainer {
+  align-items: center;
+}
+
+.leftContainer,
+.rightContainer {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 10px 10px;
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.countryCode {
+  text-align: center;
+}
+
+.newTotal {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* @media only screen and (max-width: 1000px) {
+  .twoContainers {
+    flex-direction: column;
+  }
+ 
+  .leftContainer,
+  .rightContainer {
+    margin: 5px 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .twoContainers {
+    flex-direction: column;
+    font-weight: 700;
+    text-align: center;
+  }
+} */
