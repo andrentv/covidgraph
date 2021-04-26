@@ -11,10 +11,10 @@ export default function Home({ data, countries }) {
       </Head>
       <div className={styles.headersInfo}>
         <p>Latest Update: {data.Date.split('T')[0]}</p>
-        <p>Countries Currently More Then 52miConfirmed Infections: {countries.length}</p>
+        <p>Countries Currently More Then 2 Millions Confirmed Infections: {countries.length}</p>
       </div>
       <div>
-        <p className={styles.headersTitle}>Countries with Lowest Confirmed Covid Infections</p>
+        <p className={styles.headersTitle}>Countries with Highest Confirmed Covid Infections</p>
         <div className={styles.countriesWrapper}>
           {countries.map(country => {
           return (
