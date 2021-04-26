@@ -56,10 +56,18 @@
 
 .twoContainers {
   display: flex;
+  font-weight: 700;  
 }
 
 .leftContainer {
   flex-direction: column;
+}
+
+.leftContainer div {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 4px;
+  
 }
 
 .rightContainer {
@@ -146,31 +154,30 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  font-weight: 700;
-  text-align: center;
-  margin: 0px;
+  
 }
 
-.leftContainer {
-  flex-direction: column;
-  margin: 0;
-  width: 100%;
+.leftContainer div {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .rightContainer {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .leftContainer,
 .rightContainer {
-  align-items: center;
-  width: 100%;
-  
   border-radius: 0px; 
 }
 
 .newTotal p {
   margin: 10px;
   font-size: 15px;
+}
+
+.rightContainer canvas {
+  width: 300px! Important;
+  height: 350px! Important;
 }
 } 
