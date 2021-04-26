@@ -16,7 +16,7 @@ export default function LineChart({ countryMonth }) {
         }]
     }}
     height={400}
-    width={600}
+    width={300}
     options= {{
         maintainAspectRatio: false,
                 scales: {

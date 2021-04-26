@@ -99,10 +99,30 @@ display: flex;
 }
 
 @media only screen and (max-width: 800px) {
-  .headersInfo {
-    font-size: 10px;
-    text-align: center;
-  }
+  
+  .container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.headersInfo {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  font-size: 12px;
+  position: fixed;
+  width: 100%;
+}
+
+.headersInfo p {
+  margin: 5px;
+  
+}
+
+.headersTitle {
+  padding-top: 30px;
+}
+
 }
 
 
