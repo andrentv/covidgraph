@@ -1,3 +1,15 @@
+install
+npm install create-next-app <nameapp>
+npm install --save react-chartjs-2 chart.js
+npm install leaflet
+npm install react-leaflet
+
+#API COVID Data:
+https://api.covid19api.com/summary
+https://apify.com/covid-19
+This request is using Basic Auth from collection Coronavirus COVID19 API
+#Api Flags = https://flagcdn.com/
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
