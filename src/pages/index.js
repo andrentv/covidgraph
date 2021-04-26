@@ -7,11 +7,11 @@ export default function Home({ data, countries }) {
     <div className={styles.container}>
       <Head>
         <title>Covid Infograph</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <div className={styles.headersInfo}>
         <p>Latest Update: {data.Date.split('T')[0]}</p>
-        <p>Countries Currently Less Then 5000 Confirmed Infections: {countries.length}</p>
+        <p>Countries Currently More Then 52miConfirmed Infections: {countries.length}</p>
       </div>
       <div>
         <p className={styles.headersTitle}>Countries with Lowest Confirmed Covid Infections</p>
@@ -40,8 +40,8 @@ export default function Home({ data, countries }) {
 export async function getServerSideProps(context) {
   const res = await fetch('https://api.covid19api.com/summary');
   const data = await res.json();
-  const countries = await data.Countries.filter(country => country.TotalConfirmed < 5000);
-  countries.sort((a, b) => (a.TotalConfirmed > b.TotalConfirmed) ? 1 : -1)
+  const countries = await data.Countries.filter(country => country.TotalConfirmed > 2000000);
+  countries.sort((a, b) => (a.TotalConfirmed > b.TotalConfirmed) ? -1 : 1)
     return {
     props: { data, countries }, // will be passed to the page component as props
   }
