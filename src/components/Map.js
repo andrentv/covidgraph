@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import { icon } from 'leaflet';
 
 const ICON = icon({
-    iconUrl: "/public/location.svg",
+    iconUrl: "./location.svg",
     iconSize: [16,16],
 })
 
@@ -15,9 +15,9 @@ export default function Map({ countryMonth }) {
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={[countryMonth.Lat, countryMonth.Lon]}>
+            <Marker icon={ICON} position={[countryMonth.Lat, countryMonth.Lon]}>
             <Popup>
-                {countryMonth.Coutry} is located here!
+                {countryMonth.Country} is located here!
             </Popup>
             </Marker>
         </MapContainer>
